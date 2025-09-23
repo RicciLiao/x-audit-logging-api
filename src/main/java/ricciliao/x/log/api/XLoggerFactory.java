@@ -9,7 +9,7 @@ public final class XLoggerFactory {
         throw new IllegalStateException("Utility class");
     }
 
-    private final static XLoggerProvider PROVIDER_INSTANCE;
+    private static final XLoggerProvider PROVIDER_INSTANCE;
 
     static {
         ServiceLoader<XLoggerProvider> loader = ServiceLoader.load(XLoggerProvider.class, XLoggerFactory.class.getClassLoader());
